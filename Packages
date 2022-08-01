@@ -1,0 +1,65 @@
+Package: com.randy420.taidependscoolstar
+Architecture: iphoneos-arm
+Version: 0.2
+Section: System
+Maintainer: Randy420 <randy.skinner@hotmail.com>
+Installed-Size: 0
+Depends: clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid, plutil, com.kabiroberai.swift-toolchain, com.opa334.ccsupport, xar, lz4
+Conflicts: com.randy420.taidependsother, org.theos.dependencies
+Replaces: com.randy420.taidependsother, org.theos.dependencies, theos-dependencies
+Filename: ./debs/Theos-Depends/dependsCool.deb
+Size: 824
+MD5sum: 77b5b049fef479d112c52adc52d3b25f
+SHA1: d69535e37ae0788a6dad1694867d21c85fab1793
+SHA256: 1ed7a3d107ab769ac170f82990f280bc4f9ff7ef5a5ad6b6bec2cfc04cd10148
+SHA512: 8ea3e47984daf1ae2c69df3a453cb7f8cec378f058dd187c0125ba0980fd07c9d1def78b2769e3d06ccd6c8c63ec65a89b909e2428236338cde5c702d33125a3
+Homepage: https://theemeraldisle.family
+Description: Dependencies for Procursus based jailbreaks (known as coolstar jailbreaks)
+Tag: role::hacker
+Name: Theos Auto Installer Dependencies for Procursus based jailbreaks
+Depiction: https://Randy-420.GitHub.io/depic/taidependscoolstar.html
+Author: Randy420 <randy.skinner@hotmail.com>
+
+Package: com.randy420.taidependsother
+Architecture: iphoneos-arm
+Version: 0.1
+Section: System
+Maintainer: Randy420 <randy.skinner@hotmail.com>
+Installed-Size: 0
+Depends: clang, clang-10, curl, git, coreutils, unzip, coreutils-bin, grep, ldid, rsync, xz, dpkg, lz4, make, perl, odcctools, darwintools, llvm, llvm-10, libllvm10, com.bingner.plutil, com.kabiroberai.swift-toolchain, openssl, com.opa334.ccsupport, xar
+Conflicts: com.randy420.taidependscoolstar, org.theos.dependencies, theos-dependencies
+Replaces: com.randy420.taidependscoolstar, org.theos.dependencies, theos-dependencies
+Filename: ./debs/Theos-Depends/dependsOther.deb
+Size: 870
+MD5sum: 1457aadc30cc6326034ba762eb706015
+SHA1: d19731b3523dd62f3a8f8cf2ed765a7579e9ffc1
+SHA256: 02cb8e1b569354684d972ef9a20fb73a9defe9544636a0a70c34f704f6db762f
+SHA512: 0b497e272272e4ed829a9385c558c4f7472d1981bdebfc9a48a7b5f7c9597e89b396ab66d8207052fe42553b8a4bad13559892c906a5ff70906455a3c864c1d9
+Homepage: https://theemeraldisle.family
+Description: dependencies for all other jailbreaks
+Tag: role::hacker
+Name: Theos Auto Installer Dependencies for All Other Jailbreaks
+Depiction: https://Randy-420.GitHub.io/depic/taidependsother.html
+Author: Randy420 <randy.skinner@hotmail.com>
+
+Package: xyz.cypwn.jellyfish
+Architecture: iphoneos-arm
+Version: 1.6.5
+Section: Tweaks
+Maintainer: CyPwn
+Installed-Size: 472
+Depends: mobilesubstrate, preferenceloader, dev.ayden.ios.lib.sys.aurora | xyz.cypwn.aurora, ws.hbang.alderis (>= 1.1), firmware (>= 11.0)
+Conflicts: applebetas.ios.tweak.time11,com.junesiphone.lockpluspro,com.adriandev.jellyfishcustom,com.bengiannis.manta,hi.my.name.is.ubik.kalm
+Filename: ./debs/arpotx.jellyfish_1.6.5_iphoneos-arm.deb
+Size: 105620
+MD5sum: d2bae7eb8b52521675906601af6fd5d9
+SHA1: f92daa1f37352e92b8b7b70425b00bd4eee54859
+SHA256: 4d91af7554980dbea3a7142f3c7a2b1995f6c0f8993e3c845b64cbb4fd9d4db0
+SHA512: 98491e6da696944e7f85696d3774fae16d2d321875707791ab6268399722cebd4fdf88ad3697f7b0281cb5f515d9ebc77c010ed00083c16b2de92d2314ede773
+Description: Natural, Simple, Beautiful: Redesign your Lock screen with Jellyfish.
+Depiction: https://repo.cypwn.xyz/depiction/139
+SileoDepiction: https://repo.cypwn.xyz/sileo_depiction/139
+Name: Jellyfish
+Author: Justin Proulx and Ayden Panhuyzen <justinproulxapps@outlook.com>
+Icon: https://cdn.chariz.cloud/icon/jellyfish/icon@3x.png
+
