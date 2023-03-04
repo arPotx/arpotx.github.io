@@ -1,0 +1,20 @@
+Package: xyz.cypwn.jellyfish
+Architecture: iphoneos-arm
+Version: 1.6.5
+Section: Tweaks
+Maintainer: arPotx's Repo
+Installed-Size: 472
+Depends: mobilesubstrate, preferenceloader, dev.ayden.ios.lib.sys.aurora | xyz.cypwn.aurora, ws.hbang.alderis (>= 1.1), firmware (>= 11.0)
+Conflicts: applebetas.ios.tweak.time11,com.junesiphone.lockpluspro,com.adriandev.jellyfishcustom,com.bengiannis.manta,hi.my.name.is.ubik.kalm
+Filename: ./debs/arpotx.jellyfish_1.6.5_iphoneos-arm.deb
+Size: 105620
+MD5sum: d2bae7eb8b52521675906601af6fd5d9
+SHA1: f92daa1f37352e92b8b7b70425b00bd4eee54859
+SHA256: 4d91af7554980dbea3a7142f3c7a2b1995f6c0f8993e3c845b64cbb4fd9d4db0
+SHA512: 98491e6da696944e7f85696d3774fae16d2d321875707791ab6268399722cebd4fdf88ad3697f7b0281cb5f515d9ebc77c010ed00083c16b2de92d2314ede773
+Description: Natural, Simple, Beautiful: Redesign your Lock screen with Jellyfish.
+Depiction: https://arpotx.github.io/depic/Jellyfish.html
+Name: Jellyfish
+Author: Justin Proulx and Ayden Panhuyzen <justinproulxapps@outlook.com>
+Icon: https://cdn.chariz.cloud/icon/jellyfish/icon@3x.png
+

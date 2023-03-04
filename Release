@@ -1,0 +1,37 @@
+Architectures: iphoneos-arm
+Codename: ios
+Components: main
+Date: Wed, 03 Aug 2022 17:35:47 +0000
+Description: Simple things… Simpler.
+Label: arPotx's Cydia Repo
+Origin: arPotx's Repo
+Suite: stable
+Version: 1.0
+MD5Sum:
+ 0618d01716773d190eaba83fd9fef81a             3501 Packages
+ 2dc75572bba1039cc80183f8dfd8898c             1713 Packages.bz2
+ ff078144c62d7e1c663073d5b7ed9f00             1588 Packages.gz
+ 1e8ba12e91259132a758492f82b372bb             1628 Packages.xz
+ fbe4f2dfee3898f8d2d272d70a543e49             1582 Packages.zst
+ 015d1afcc6e6082e9045da861eec1de1              219 Release
+SHA1:
+ e4f8872545be93cf5364f2e2faf9cb40eed8e0fd             3501 Packages
+ d533b444e5da3dbbcc7b55b8fbeb5f0721a5edd4             1713 Packages.bz2
+ cc5787567f05976ba46dd05f90b19568ac866b90             1588 Packages.gz
+ df3a0ca2f94e54ebfe63270123842a3355995453             1628 Packages.xz
+ a03b2598cf5490ffcd09fd3b58596fd16fbe06fc             1582 Packages.zst
+ cae57aea1e797b1cd9eef1b2ce9c302bfdf85019              219 Release
+SHA256:
+ 800cf9dcd1b17e40a3e16010eb69a760ed510e0ce210d0c0222daa54bd53ebdc             3501 Packages
+ f0d01fbf72da9a895c33770a8c7e35b3655ce06ddf3e5825e1df8a00a03491be             1713 Packages.bz2
+ 4f19cd140cbd1928824ae5e22e563eec6269c822715eef3e7afb96fbaee4bdae             1588 Packages.gz
+ 4e616ca2b467429ace6fc7ea654f6805716f7101824c58caee6bc5930ce4c41e             1628 Packages.xz
+ f77cc98ad7ccba117d13960736ec260881555a3efb9598435e21476777a39b20             1582 Packages.zst
+ 579a802522b89ae9b5ae308a127fc2b38c8d571ad02a6d2a93c3af25180d25d9              219 Release
+SHA512:
+ 1d518753f7e9e67fa053d93f7d74926f63f3950f9fa759b1d627c774ad7f7a184ddb91dd650926432f24e20c26617421dfc047a0e7c15dc16af9b84dc23018cd             3501 Packages
+ 13800d8fcd3fcabf781b627a73f19081d55d756974ea95721b96a41c0abcc4c4d3a98ab8ee9e2acb118cf699506a14662a5b925025651469022cf02c89003d46             1713 Packages.bz2
+ b43aa9bd87b5ba6b06f7d70681b37d150214ba23d886291c5be9e00e55e3c4330b7a21cb3fb3730243bdc6318969e06eb95e86383f14c67c23c5d2a03797e971             1588 Packages.gz
+ 8593b562a15163d8063637c276e668824b68f6887e3799894ed68d979b9f0b15cb0cb22ac1533090a15ab78aad219c37bcd069708fea27ff4b6adea62628bb92             1628 Packages.xz
+ 25a94bfd1bb652b007d7d62f663104a37b33e28ef3a63f24e6dd93f48ecdffa0317659c2bb0994377587d9ebaed4194826e1282488bc8a154ef62e4d97464c1b             1582 Packages.zst
+ 6bbdc9e7d3c733096d0e292f7d434f2ac9b96b2216e462854e2916337c6d456b87e76caf8f62edf82efeb25d98c3b3c8c338c9ae082eb24cfb9d326a03490bba              219 Release
