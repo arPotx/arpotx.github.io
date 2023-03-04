@@ -1679,7 +1679,7 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #000000;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3597,10 +3597,10 @@
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, #008655, #062C4F);
+			background-image: -webkit-linear-gradient(90deg, #008655 , #062C4F);
+			background-image: -ms-linear-gradient(90deg, #008655 , #062C4F);
+			background-image: linear-gradient(90deg, #008655 , #062C4F);			
 		}
 
 		#main table tbody tr {
