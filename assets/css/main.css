@@ -2290,7 +2290,7 @@
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: #008655;
 	}
 
 	input[type="checkbox"]:focus + label:before,
