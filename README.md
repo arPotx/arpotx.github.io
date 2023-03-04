@@ -1,5 +1,5 @@
 # arpotx.github.io
-Cydia Repository
+arPotx´s Cydia Repository
 =======
 Version: 0.1.0
 =======
