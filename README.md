@@ -1,4 +1,4 @@
 # arpotx.github.io
 arPotx´s Cydia Repository
 
-Version: 0.1.0
+This is my repo. Add https://arPotx.github.io/ to your favorite package manager to use it.
