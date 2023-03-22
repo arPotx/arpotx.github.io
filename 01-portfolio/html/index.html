@@ -89,7 +89,7 @@
               <a href="#about" class="nav-link" data-animate="scrolling">About</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+              <a href="#developments" class="nav-link" data-animate="scrolling">Developments</a>
             </li>
             <li class="nav-item">
               <a href="#blog" class="nav-link" data-animate="scrolling">Blog</a>
@@ -133,7 +133,34 @@
             <li><b>Age:</b> idk</li>
             <li><b>Gender:</b> Male</li>
           </ul>
-          <button class="btn btn-theme-outline">Random Button</button>
+          <button class="btn btn-theme-outline" type="button" onclick="show()" id="btnID">Random Button</button>
+          <!-- RickRoll Button /\-->
+          <style>
+ 
+            /* Set display to none for image*/
+            #image {
+                display: none;
+                width: 50%;
+            }
+          </style>
+
+          <img id="image" src= "https://cdn.vox-cdn.com/thumbor/WR9hE8wvdM4hfHysXitls9_bCZI=/0x0:1192x795/1400x1400/filters:focal(596x398:597x399)/cdn.vox-cdn.com/uploads/chorus_asset/file/22312759/rickroll_4k.jpg"
+            alt="GFG image" />
+          </div>
+ 
+          <script>
+            function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+            }
+          </script>
+        <!-- END RickRoll Button -->
         </div>
       </div>
     </div>
@@ -337,15 +364,15 @@
   </div> -->
   
   <!-- Portfolio page -->
-  <div class="vg-page page-portfolio" id="portfolio">
+  <div class="vg-page page-portfolio" id="developments">
     <div class="container">
       <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Portfolio</div>
+        <div class="badge badge-subhead">Developments</div>
       </div>
-      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <h1 class="text-center fw-normal wow fadeInUp">See my works</h1>
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
         <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+        <button class="btn btn-theme-outline" data-filter=".games">Games</button>
         <button class="btn btn-theme-outline" data-filter=".template">Template</button>
         <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
         <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
@@ -354,7 +381,7 @@
       </div>
 
       <div class="gridder my-3">
-        <div class="grid-item apps wow zoomIn">
+        <div class="grid-item games wow zoomIn">
           <div class="img-place" data-src="../assets/img/work/work-1.png" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
             <img src="../assets/img/work/work-1.png" alt="">
             <div class="img-caption">
