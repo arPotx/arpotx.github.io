@@ -3,32 +3,16 @@
 
 :star: My own Portfolio
 
-[![Status](https://img.shields.io/badge/Website-Online-brightgreen)](https://github.com/rajaprerak/rajaprerak.github.io/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://rajaprerak.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/rajaprerak/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-### Website Preview
-#### Home Page
-<img src="website_images/HomePage.gif" width="900">
-
-
-#### About Page
-<img src="website_images/AboutPage.png" width="900">
-
-
-#### Projects Page
-<img src="website_images/ProjectPage.png" width="900">
-  
-
+[![Status](https://img.shields.io/website?url=https%3A%2F%2Farpotx.github.io)]()
 
 :star: Star me on GitHub — it helps!
 
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+## Sections 📚
+⚡️ About Me
+⚡️ Experience
+⚡️ Projects with `C# and Unity`\
+⚡️ Skills
+⚡️ Contact
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> 
@@ -51,7 +35,9 @@
 
 
 ## Tools Used 🛠️
-* <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
+* <b>Unity</b> - The most using Game Engine.
+* <b>C#</b> - The best language for game development.
+* <b>HTML</b> - For the Website.
 
 ## Contributing 💡
 #### Step 1
