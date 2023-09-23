@@ -1,4 +1,4 @@
-<h1 align="center">Hey 👋, thats my Portfolio</h1>
+<h1 align="center">Hey 👋</h1>
 <h3 align="center">This is my personal portfolio :)</h3>
 
 <h3 align="left">Connect with me:</h3>
