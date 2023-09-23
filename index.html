@@ -27,6 +27,8 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/78bc016042.js" crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -62,10 +64,10 @@
           <li><a href="#about"><span>About</span></a></li>
 <!--      <li><a href="#education"> <span>Education</span></a></li> -->
 <!--      <li><a href="#experience"> <span>Experience</span></a></li> -->
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
+<!--      <li><a href="#projects"> <span>Projects</span></a></li>-->
           <li><a href="#portfolio"> <span>Projects</span></a></li>
           <li><a href="#skills"> <span>Skills</span></a></li>
-<!--          <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li> -->
+<!--      <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li> -->
           <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
           <li><a href="jb/index.html"> <span>JailBreak Repo</span></a></li>
           <li><a href="#contacts"> <span>Contact</span></a></li>
@@ -76,11 +78,10 @@
       <div class="social-links">
           <a href="https://discord.gg/pEE5MV6739" target="_blank" class="discord"><i class="bx bxl-discord"></i></a>
           <a href="https://www.github.com/arPotx" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:shark.info24@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-          <a href="https://www.escapepoly.github.io" target="_blank" class="escapepoly"><i class="bx bxl-unity"></i></a>
-
+          <a onclick="copyToClipboard('shark.info24@gmail.com')"><i class='bx bx-envelope'></i></a>
+          <a href="https://escapepoly.github.io" target="_blank" class="escapepoly"><i class='bx bxl-unity'></i></a>
       </div>
-
+      <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
     </div>
   </header><!-- End Header -->
 
@@ -108,12 +109,14 @@
             <div class="col-lg-6">
               <ul>
                 <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 06 February</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> shark.info24@gmail.com</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong><span onclick="copyToClipboard('shark.info24@gmail.com')"> shark.info24@gmail.com</span></li>
+                <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Land:</strong> Germany</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Land:</strong><span onclick="showFlag()"> Germany</span></li>
+                <img id="germanFlag" src="images/german-flag.png" style="display: none;">
               </ul>
             </div>
           </div>
@@ -144,7 +147,7 @@
         </div>
         <div class="col-lg-3 col-md-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-global-line" style="color: #2c30ff;"></i>
+            <i class="fa-solid fa-mobile-screen-button" style="color: #2c30ff;"></i>
             <h3>iOS JailBreak</h3>
           </div>
         </div>
@@ -415,8 +418,8 @@
       </div>
       <div class="row">
         <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages and Script Editor</h4>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#09203a">
+            <h4 style="text-align:left;color:#ffffff">Languages and Script Editor</h4>
                 <p style="text-align:left;">
                   <img src="https://www.it-visions.de/grafik/Lexikon/CSharp.png" alt="vectorlogo.zone" height="120" width="120">
                   <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
@@ -424,16 +427,16 @@
 
                 </p>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Frameworks</h4>
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#09203a">
+              <h4 style="text-align:left;color:#ffffff">Frameworks</h4>
                 <p style="text-align:left;">
                   <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-ar21.svg" alt="vectorlogo.zone" height="80" width="150">
                   <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="vectorlogo.zone" height="90" width="150">
                   <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
               </p>
           </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Tools</h4>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#09203a">
+              <h4 style="text-align:left;color:#ffffff">Tools</h4>
                 <p style="text-align:left;">
                   <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
               </p>
@@ -494,17 +497,17 @@
             <div class="social-links">
               <a href="https://discord.gg/pEE5MV6739" target="_blank" class="discord"><i class="bx bxl-discord"></i></a>
               <a href="https://www.github.com/arPotx" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:shark.info24@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
+              <a href="https://escapepoly.github.io" target="_blank" class="escapepoly"><i class='bx bxl-unity'></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
-            <i class="bx bx-envelope"></i>
+            <i onclick="copyToClipboard('shark.info24@gmail.com')" class='bx bx-envelope'></i>
             <h3>Email</h3>
-            <p>shark.info24@gmail.com</p>
+            <p onclick="copyToClipboard('shark.info24@gmail.com')">shark.info24@gmail.com</p>
+            <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
           </div>
         </div>
       </div>
@@ -527,12 +530,39 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Coder", "Developer", "Game Developer"],
+      strings: ["Gamer", "Developer", "Game Developer"],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
     });
   </script>
+
+<script>
+  function copyToClipboard(text) {
+    var textarea = document.createElement("textarea");
+    textarea.textContent = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+
+    var copyNotification = document.getElementById("copyNotification");
+    copyNotification.style.display = "block";
+    setTimeout(function() {
+      copyNotification.style.display = "none";
+    }, 3000); // Der Text wird nach 3 Sekunden ausgeblendet
+  }
+</script>
+
+<script>
+  function showFlag() {
+    var flag = document.getElementById("germanFlag");
+    flag.style.display = "block";
+    setTimeout(function() {
+      flag.style.display = "none";
+    }, 3000); // Die Flagge wird nach 3 Sekunden ausgeblendet
+  }
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
