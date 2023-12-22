@@ -1,5 +1,5 @@
-// Erstellen Sie ein Objekt mit den Daten für jedes Element
-var elementData = {
+// Erstellen Sie ein Objekt mit den Daten für jedes Element in Englisch
+var elementDataEnglish = {
     'Hydrogen': {
         'Symbol': 'H',
         'Protons': 1,
@@ -56,7 +56,7 @@ var elementData = {
         'Electrons': 8,
         'Atomic mass': 15.999
     },
-    'Fluorine': {
+    'Flourine': {
         'Symbol': 'F',
         'Protons': 9,
         'Neutrons': 10,
@@ -84,7 +84,7 @@ var elementData = {
         'Electrons': 12,
         'Atomic mass': 24.305
     },
-    'Aluminum': {
+    'Aluminium': {
         'Symbol': 'Al',
         'Protons': 13,
         'Neutrons': 14,
@@ -129,28 +129,218 @@ var elementData = {
     // Fügen Sie hier weitere Elemente hinzu...
 };
 
+// Erstellen Sie ein Objekt mit den Daten für jedes Element in Deutsch
+var elementDataDeutsch = {
+    'Wasserstoff': {
+        'Symbol': 'H',
+        'Protonen': 1,
+        'Neutronen': 0,
+        'Elektronen': 1,
+        'Atommasse': 1.008
+    },
+    'Helium': {
+        'Symbol': 'He',
+        'Protonen': 2,
+        'Neutronen': 2,
+        'Elektronen': 2,
+        'Atommasse': 4.0026
+    },
+    'Lithium': {
+        'Symbol': 'Li',
+        'Protonen': 3,
+        'Neutronen': 4,
+        'Elektronen': 3,
+        'Atommasse': 6.94
+    },
+    'Beryllium': {
+        'Symbol': 'Be',
+        'Protonen': 4,
+        'Neutronen': 5,
+        'Elektronen': 4,
+        'Atommasse': 9.0122
+    },
+    'Bor': {
+        'Symbol': 'B',
+        'Protonen': 5,
+        'Neutronen': 6,
+        'Elektronen': 5,
+        'Atommasse': 10.81
+    },
+    'Kohlenstoff': {
+        'Symbol': 'C',
+        'Protonen': 6,
+        'Neutronen': 6,
+        'Elektronen': 6,
+        'Atommasse': 12.011
+    },
+    'Stickstoff': {
+        'Symbol': 'N',
+        'Protonen': 7,
+        'Neutronen': 7,
+        'Elektronen': 7,
+        'Atommasse': 14.007
+    },
+    'Sauerstoff': {
+        'Symbol': 'O',
+        'Protonen': 8,
+        'Neutronen': 8,
+        'Elektronen': 8,
+        'Atommasse': 15.999
+    },
+    'Fluor': {
+        'Symbol': 'F',
+        'Protonen': 9,
+        'Neutronen': 10,
+        'Elektronen': 9,
+        'Atommasse': 18.998
+    },
+    'Neon': {
+        'Symbol': 'Ne',
+        'Protonen': 10,
+        'Neutronen': 10,
+        'Elektronen': 10,
+        'Atommasse': 20.180
+    },
+    'Natrium': {
+        'Symbol': 'Na',
+        'Protonen': 11,
+        'Neutronen': 12,
+        'Elektronen': 11,
+        'Atommasse': 22.990
+    },
+    'Magnesium': {
+        'Symbol': 'Mg',
+        'Protonen': 12,
+        'Neutronen': 12,
+        'Elektronen': 12,
+        'Atommasse': 24.305
+    },
+    'Aluminium': {
+        'Symbol': 'Al',
+        'Protonen': 13,
+        'Neutronen': 14,
+        'Elektronen': 13,
+        'Atommasse': 26.982
+    },
+    'Silizium': {
+        'Symbol': 'Si',
+        'Protonen': 14,
+        'Neutronen': 14,
+        'Elektronen': 14,
+        'Atommasse': 28.085
+    },
+    'Phosphor': {
+        'Symbol': 'P',
+        'Protonen': 15,
+        'Neutronen': 16,
+        'Elektronen': 15,
+        'Atommasse': 30.974
+    },
+    'Schwefel': {
+        'Symbol': 'S',
+        'Protonen': 16,
+        'Neutronen': 16,
+        'Elektronen': 16,
+        'Atommasse': 32.06
+    },
+    'Chlor': {
+        'Symbol': 'Cl',
+        'Protonen': 17,
+        'Neutronen': 18,
+        'Elektronen': 17,
+        'Atommasse': 35.45
+    },
+    'Argon': {
+        'Symbol': 'Ar',
+        'Protonen': 18,
+        'Neutronen': 22,
+        'Elektronen': 18,
+        'Atommasse': 39.948
+    },
+    // Fügen Sie hier weitere Elemente hinzu...
+};
+
+// Setzen Sie die Standardsprache auf Englisch
+var language = 'english';
+
 // Wählen Sie alle Elemente aus
 var elements = document.querySelectorAll('.element');
 
-// Fügen Sie jedem Element einen Event-Listener hinzu
-elements.forEach(function(element) {
-    element.addEventListener('click', function() {
-        // Wählen Sie den #element-info-Container aus
-        var infoContainer = document.querySelector('.element-info');
+// Funktion zum Anzeigen der Elementdaten
+function displayElementData() {
+    elements.forEach(function(element) {
+        element.removeEventListener('click', clickHandler);
+        element.addEventListener('click', clickHandler);
+    });
+}
 
-        // Holen Sie sich den Namen des angeklickten Elements
-        var elementName = this.querySelector('.name').textContent;
+var lastClickedElement = null;
 
-        // Holen Sie sich die Daten des angeklickten Elements
-        var data = elementData[elementName];
+function clickHandler(event) {
+    lastClickedElement = event.target.closest('.element');
+    // Wählen Sie den #element-info-Container aus
+    var infoContainer = document.querySelector('.element-info');
 
-        // Überprüfen Sie, ob Daten für das Element vorhanden sind
-        if (data) {
-            // Erstellen Sie einen String mit den Daten
-            var dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
+    // Holen Sie sich den Namen des angeklickten Elements
+    var elementName;
+    var nameElement = event.target.closest('.element').querySelector('.name');
+    if (language === 'english') {
+        elementName = nameElement.getAttribute('data-english-name');
+    } else {
+        elementName = nameElement.getAttribute('data-deutsch-name');
+    }
 
-            // Fügen Sie die Daten in den #element-info-Container ein
-            infoContainer.innerHTML = dataString;
+    // Verwenden Sie die language-Variable, um zu bestimmen, welches elementData-Objekt verwendet werden soll
+    var elementData = language === 'english' ? elementDataEnglish : elementDataDeutsch;
+
+    // Holen Sie sich die Daten des angeklickten Elements
+    var data = elementData[elementName];
+
+    // Überprüfen Sie, ob Daten für das Element vorhanden sind
+    if (data) {
+        // Erstellen Sie einen String mit den Daten
+        var dataString;
+        if (language === 'english') {
+            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
+        } else {
+            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protonen: ' + data.Protonen + '<br>Neutronen: ' + data.Neutronen + '<br>Elektronen: ' + data.Elektronen + '<br>Atommasse: ' + data.Atommasse;
+        }
+
+        // Fügen Sie die Daten in den #element-info-Container ein
+        infoContainer.innerHTML = dataString;
+    }
+}
+
+// Führen Sie die Funktion zum ersten Mal aus
+displayElementData();
+
+// Ändern Sie die Sprache, wenn eine Schaltfläche geklickt wird
+document.getElementById('deutsch').addEventListener('click', function() {
+    language = 'deutsch';
+    displayElementData();
+    var labels = document.querySelectorAll('label');
+    labels.forEach(function(label) {
+        var deutschName = label.getAttribute('data-deutsch-name');
+        if (deutschName) {
+            label.textContent = deutschName;
         }
     });
+    if (lastClickedElement) {
+        lastClickedElement.click();
+    }
+});
+
+document.getElementById('english').addEventListener('click', function() {
+    language = 'english';
+    displayElementData();
+    var labels = document.querySelectorAll('label');
+    labels.forEach(function(label) {
+        var englishName = label.getAttribute('data-english-name');
+        if (englishName) {
+            label.textContent = englishName;
+        }
+    });
+    if (lastClickedElement) {
+        lastClickedElement.click();
+    }
 });
