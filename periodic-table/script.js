@@ -1752,3 +1752,36 @@ function onLanguageChange(language) {
       }
     });
   }
+
+  document.querySelectorAll('.element').forEach(function(element) {
+    element.querySelector('.activate').addEventListener('change', function(e) {
+      var atom = document.getElementById('atom');
+      var atomName = element.querySelector('.name').textContent.toLowerCase();
+      atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
+      if (e.target.checked) {
+        if (atomName === 'hydrogen') {
+          atom.style.display = 'block';
+          var orbit = document.createElement('div');
+          orbit.className = 'orbit';
+          var electron = document.createElement('div');
+          electron.className = 'electron';
+          orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
+          atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+        } else if (atomName === 'helium') {
+          atom.style.display = 'block';
+          var orbit = document.createElement('div');
+          orbit.className = 'orbit';
+          for (var i = 0; i < 2; i++) {
+            var electron = document.createElement('div');
+            electron.className = 'electron';
+            orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
+          }
+          atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+        } else {
+          atom.style.display = 'none';
+        }
+      } else {
+        atom.style.display = 'none';
+      }
+    });
+  });
