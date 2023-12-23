@@ -1677,7 +1677,6 @@ var lastClickedElement = null;
 
 function clickHandler(event) {
     lastClickedElement = event.target.closest('.element');
-    // Wählen Sie den #element-info-Container aus
     var infoContainer = document.querySelector('.element-info');
 
     // Holen Sie sich den Namen des angeklickten Elements
@@ -1689,15 +1688,11 @@ function clickHandler(event) {
         elementName = nameElement.getAttribute('data-deutsch-name');
     }
 
-    // Verwenden Sie die language-Variable, um zu bestimmen, welches elementData-Objekt verwendet werden soll
     var elementData = language === 'english' ? elementDataEnglish : elementDataDeutsch;
 
-    // Holen Sie sich die Daten des angeklickten Elements
     var data = elementData[elementName];
 
-    // Überprüfen Sie, ob Daten für das Element vorhanden sind
     if (data) {
-        // Erstellen Sie einen String mit den Daten
         var dataString;
         if (language === 'english') {
             dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
@@ -1705,7 +1700,6 @@ function clickHandler(event) {
             dataString = data.Symbol + " (" + elementName + ")" + '<br>Protonen: ' + data.Protonen + '<br>Neutronen: ' + data.Neutronen + '<br>Elektronen: ' + data.Elektronen + '<br>Atommasse: ' + data.Atommasse;
         }
 
-        // Fügen Sie die Daten in den #element-info-Container ein
         infoContainer.innerHTML = dataString;
     }
 }
@@ -1727,6 +1721,7 @@ document.getElementById('deutsch').addEventListener('click', function() {
     if (lastClickedElement) {
         lastClickedElement.click();
     }
+    onLanguageChange('deutsch');
 });
 
 document.getElementById('english').addEventListener('click', function() {
@@ -1742,4 +1737,18 @@ document.getElementById('english').addEventListener('click', function() {
     if (lastClickedElement) {
         lastClickedElement.click();
     }
+    onLanguageChange('english');
 });
+
+function onLanguageChange(language) {
+
+    var names = document.querySelectorAll('.name, .atom');
+  
+    names.forEach(function(name) {
+      if (language === 'deutsch') {
+        name.textContent = name.getAttribute('data-deutsch-name');
+      } else {
+        name.textContent = name.getAttribute('data-english-name');
+      }
+    });
+  }
