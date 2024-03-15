@@ -1751,6 +1751,7 @@ function onLanguageChange(language) {
         name.textContent = name.getAttribute('data-english-name');
       }
     });
+<<<<<<< HEAD
   }
 
   document.querySelectorAll('.element').forEach(function(element) {
@@ -1785,3 +1786,6 @@ function onLanguageChange(language) {
       }
     });
   });
+=======
+  }
+>>>>>>> cc4b3ad (Language Update)
