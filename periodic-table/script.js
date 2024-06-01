@@ -1659,6 +1659,835 @@ var elementDataDeutsch = {
     // Fügen Sie hier weitere Elemente hinzu...
 };
 
+var elementDataLatin = {
+    Hydrogenium: {
+        Symbol: "H",
+        Protoni: 1,
+        Neutrones: 0,
+        Electrones: 1,
+        "Massa atomica": 1.008
+    },
+    Helium: {
+        Symbol: "He",
+        Protoni: 2,
+        Neutrones: 2,
+        Electrones: 2,
+        "Massa atomica": 4.0026
+    },
+    Lithium: {
+        Symbol: "Li",
+        Protoni: 3,
+        Neutrones: 4,
+        Electrones: 3,
+        "Massa atomica": 6.94
+    },
+    Beryllium: {
+        Symbol: "Be",
+        Protoni: 4,
+        Neutrones: 5,
+        Electrones: 4,
+        "Massa atomica": 9.0122
+    },
+    Borum: {
+        Symbol: "B",
+        Protoni: 5,
+        Neutrones: 6,
+        Electrones: 5,
+        "Massa atomica": 10.81
+    },
+    Carbonium: {
+        Symbol: "C",
+        Protoni: 6,
+        Neutrones: 6,
+        Electrones: 6,
+        "Massa atomica": 12.011
+    },
+    Nitrogenium: {
+        Symbol: "N",
+        Protoni: 7,
+        Neutrones: 7,
+        Electrones: 7,
+        "Massa atomica": 14.007
+    },
+    Oxygenium: {
+        Symbol: "O",
+        Protoni: 8,
+        Neutrones: 8,
+        Electrones: 8,
+        "Massa atomica": 15.999
+    },
+    Fluorum: {
+        Symbol: "F",
+        Protoni: 9,
+        Neutrones: 10,
+        Electrones: 9,
+        "Massa atomica": 18.998
+    },
+    Neon: {
+        Symbol: "Ne",
+        Protoni: 10,
+        Neutrones: 10,
+        Electrones: 10,
+        "Massa atomica": 20.180
+    },
+    Natrium: {
+        Symbol: "Na",
+        Protoni: 11,
+        Neutrones: 12,
+        Electrones: 11,
+        "Massa atomica": 22.990
+    },
+    Magnesium: {
+        Symbol: "Mg",
+        Protoni: 12,
+        Neutrones: 12,
+        Electrones: 12,
+        "Massa atomica": 24.305
+    },
+    Aluminium: {
+        Symbol: "Al",
+        Protoni: 13,
+        Neutrones: 14,
+        Electrones: 13,
+        "Massa atomica": 26.982
+    },
+    Silicium: {
+        Symbol: "Si",
+        Protoni: 14,
+        Neutrones: 14,
+        Electrones: 14,
+        "Massa atomica": 28.085
+    },
+    Phosphorus: {
+        Symbol: "P",
+        Protoni: 15,
+        Neutrones: 16,
+        Electrones: 15,
+        "Massa atomica": 30.974
+    },
+    Sulphur: {
+        Symbol: "S",
+        Protoni: 16,
+        Neutrones: 16,
+        Electrones: 16,
+        "Massa atomica": 32.06
+    },
+    Chlorum: {
+        Symbol: "Cl",
+        Protoni: 17,
+        Neutrones: 18,
+        Electrones: 17,
+        "Massa atomica": 35.45
+    },
+    Argon: {
+        Symbol: "Ar",
+        Protoni: 18,
+        Neutrones: 22,
+        Electrones: 18,
+        "Massa atomica": 39.948
+    },
+    Kalium: {
+        Symbol: "K",
+        Protoni: 19,
+        Neutrones: 20,
+        Electrones: 19,
+        "Massa atomica": 39.098
+    },
+    Calcium: {
+        Symbol: "Ca",
+        Protoni: 20,
+        Neutrones: 20,
+        Electrones: 20,
+        "Massa atomica": 40.078
+    },
+    Scandium: {
+        Symbol: "Sc",
+        Protoni: 21,
+        Neutrones: 24,
+        Electrones: 21,
+        "Massa atomica": 44.956
+    },
+    Titanium: {
+        Symbol: "Ti",
+        Protoni: 22,
+        Neutrones: 26,
+        Electrones: 22,
+        "Massa atomica": 47.867
+    },
+    Vanadium: {
+        Symbol: "V",
+        Protoni: 23,
+        Neutrones: 28,
+        Electrones: 23,
+        "Massa atomica": 50.942
+    },
+    Chromium: {
+        Symbol: "Cr",
+        Protoni: 24,
+        Neutrones: 28,
+        Electrones: 24,
+        "Massa atomica": 51.996
+    },
+        Manganum: {
+        Symbol: "Mn",
+        Protoni: 25,
+        Neutrones: 30,
+        Electrones: 25,
+        "Massa atomica": 54.938
+        },
+        Ferrum: {
+        Symbol: "Fe",
+        Protoni: 26,
+        Neutrones: 30,
+        Electrones: 26,
+        "Massa atomica": 55.845
+        },
+        Cobaltum: {
+        Symbol: "Co",
+        Protoni: 27,
+        Neutrones: 32,
+        Electrones: 27,
+        "Massa atomica": 58.933
+        },
+        Niccolum: {
+        Symbol: "Ni",
+        Protoni: 28,
+        Neutrones: 31,
+        Electrones: 28,
+        "Massa atomica": 58.693
+        },
+        Cuprum: {
+        Symbol: "Cu",
+        Protoni: 29,
+        Neutrones: 35,
+        Electrones: 29,
+        "Massa atomica": 63.546
+        },
+        Zincum: {
+        Symbol: "Zn",
+        Protoni: 30,
+        Neutrones: 35,
+        Electrones: 30,
+        "Massa atomica": 65.38
+        },
+        Gallium: {
+        Symbol: "Ga",
+        Protoni: 31,
+        Neutrones: 39,
+        Electrones: 31,
+        "Massa atomica": 69.723
+        },
+        Germanium: {
+        Symbol: "Ge",
+        Protoni: 32,
+        Neutrones: 41,
+        Electrones: 32,
+        "Massa atomica": 72.63
+        },
+        Arsenicum: {
+        Symbol: "As",
+        Protoni: 33,
+        Neutrones: 42,
+        Electrones: 33,
+        "Massa atomica": 74.922
+        },
+        Selenium: {
+        Symbol: "Se",
+        Protoni: 34,
+        Neutrones: 45,
+        Electrones: 34,
+        "Massa atomica": 78.971
+        },
+        Bromum: {
+        Symbol: "Br",
+        Protoni: 35,
+        Neutrones: 45,
+        Electrones: 35,
+        "Massa atomica": 79.904
+        },
+        Krypton: {
+        Symbol: "Kr",
+        Protoni: 36,
+        Neutrones: 48,
+        Electrones: 36,
+        "Massa atomica": 83.798
+        },
+        Rubidium: {
+        Symbol: "Rb",
+        Protoni: 37,
+        Neutrones: 48,
+        Electrones: 37,
+        "Massa atomica": 85.468
+        },
+        Strontium: {
+        Symbol: "Sr",
+        Protoni: 38,
+        Neutrones: 50,
+        Electrones: 38,
+        "Massa atomica": 87.62
+        },
+        Yttrium: {
+        Symbol: "Y",
+        Protoni: 39,
+        Neutrones: 50,
+        Electrones: 39,
+        "Massa atomica": 88.906
+        },
+        Zirconium: {
+        Symbol: "Zr",
+        Protoni: 40,
+        Neutrones: 51,
+        Electrones: 40,
+        "Massa atomica": 91.224
+        },
+        Niobium: {
+        Symbol: "Nb",
+        Protoni: 41,
+        Neutrones: 52,
+        Electrones: 41,
+        "Massa atomica": 92.906
+        },
+        Molybdaenum: {
+        Symbol: "Mo",
+        Protoni: 42,
+        Neutrones: 54,
+        Electrones: 42,
+        "Massa atomica": 95.95
+        },
+        Technetium: {
+        Symbol: "Tc",
+        Protoni: 43,
+        Neutrones: 55,
+        Electrones: 43,
+        "Massa atomica": 98
+        },
+        Ruthenium: {
+        Symbol: "Ru",
+        Protoni: 44,
+        Neutrones: 57,
+        Electrones: 44,
+        "Massa atomica": 101.07
+        },
+        Rhodium: {
+        Symbol: "Rh",
+        Protoni: 45,
+        Neutrones: 58,
+        Electrones: 45,
+        "Massa atomica": 102.91
+        },
+        Palladium: {
+        Symbol: "Pd",
+        Protoni: 46,
+        Neutrones: 60,
+        Electrones: 46,
+        "Massa atomica": 106.42
+        },
+        Argentum: {
+        Symbol: "Ag",
+        Protoni: 47,
+        Neutrones: 61,
+        Electrones: 47,
+        "Massa atomica": 107.87
+        },
+        Cadmium: {
+        Symbol: "Cd",
+        Protoni: 48,
+        Neutrones: 64,
+        Electrones: 48,
+        "Massa atomica": 112.41
+        },
+        Indium: {
+        Symbol: "In",
+        Protoni: 49,
+        Neutrones: 66,
+        Electrones: 49,
+        "Massa atomica": 114.82
+        },
+        Stannum: {
+        Symbol: "Sn",
+        Protoni: 50,
+        Neutrones: 69,
+        Electrones: 50,
+        "Massa atomica": 118.71
+        },
+        Stibium: {
+        Symbol: "Sb",
+        Protoni: 51,
+        Neutrones: 71,
+        Electrones: 51,
+        "Massa atomica": 121.76
+        },
+        Tellurium: {
+        Symbol: "Te",
+        Protoni: 52,
+        Neutrones: 76,
+        Electrones: 52,
+        "Massa atomica": 127.60
+        },
+        Iodum: {
+        Symbol: "I",
+        Protoni: 53,
+        Neutrones: 74,
+        Electrones: 53,
+        "Massa atomica": 126.90
+        },
+        Xenon: {
+        Symbol: "Xe",
+        Protoni: 54,
+        Neutrones: 77,
+        Electrones: 54,
+        "Massa atomica": 131.29
+        },
+        Caesium: {
+        Symbol: "Cs",
+        Protoni: 55,
+        Neutrones: 78,
+        Electrones: 55,
+        "Massa atomica": 132.91
+        },
+        Barium: {
+        Symbol: "Ba",
+        Protoni: 56,
+        Neutrones: 81,
+        Electrones: 56,
+        "Massa atomica": 137.33
+        },
+        Lanthanum: {
+        Symbol: "La",
+        Protoni: 57,
+        Neutrones: 82,
+        Electrones: 57,
+        "Massa atomica": 138.91
+        },
+        Cerium: {
+        Symbol: "Ce",
+        Protoni: 58,
+        Neutrones: 82,
+        Electrones: 58,
+        "Massa atomica": 140.12
+        },
+        Praseodymium: {
+        Symbol: "Pr",
+        Protoni: 59,
+        Neutrones: 82,
+        Electrones: 59,
+        "Massa atomica": 140.91
+        },
+        Neodymium: {
+        Symbol: "Nd",
+        Protoni: 60,
+        Neutrones: 84,
+        Electrones: 60,
+        "Massa atomica": 144.24
+        },
+        Promethium: {
+        Symbol: "Pm",
+        Protoni: 61,
+        Neutrones: 84,
+        Electrones: 61,
+        "Massa atomica": 145
+        },
+        Samarium: {
+        Symbol: "Sm",
+        Protoni: 62,
+        Neutrones: 88,
+        Electrones: 62,
+        "Massa atomica": 150.36
+        },
+        Europium: {
+        Symbol: "Eu",
+        Protoni: 63,
+        Neutrones: 89,
+        Electrones: 63,
+        "Massa atomica": 151.96
+        },
+        Gadolinium: {
+        Symbol: "Gd",
+        Protoni: 64,
+        Neutrones: 93,
+        Electrones: 64,
+        "Massa atomica": 157.25
+        },
+        Terbium: {
+        Symbol: "Tb",
+        Protoni: 65,
+        Neutrones: 94,
+        Electrones: 65,
+        "Massa atomica": 158.93
+        },
+        Dysprosium: {
+        Symbol: "Dy",
+        Protoni: 66,
+        Neutrones: 97,
+        Electrones: 66,
+        "Massa atomica": 162.50
+        },
+        Holmium: {
+        Symbol: "Ho",
+        Protoni: 67,
+        Neutrones: 98,
+        Electrones: 67,
+        "Massa atomica": 164.93
+        },
+        Erbium: {
+        Symbol: "Er",
+        Protoni: 68,
+        Neutrones: 99,
+        Electrones: 68,
+        "Massa atomica": 167.26
+        },
+        Thulium: {
+        Symbol: "Tm",
+        Protoni: 69,
+        Neutrones: 100,
+        Electrones: 69,
+        "Massa atomica": 168.93
+        },
+        Ytterbium: {
+        Symbol: "Yb",
+        Protoni: 70,
+        Neutrones: 103,
+        Electrones: 70,
+        "Massa atomica": 173.05
+        },
+        Lutetium: {
+        Symbol: "Lu",
+        Protoni: 71,
+        Neutrones: 104,
+        Electrones: 71,
+        "Massa atomica": 174.97
+        },
+        Hafnium: {
+        Symbol: "Hf",
+        Protoni: 72,
+        Neutrones: 106,
+        Electrones: 72,
+        "Massa atomica": 178.49
+        },
+        Tantalum: {
+        Symbol: "Ta",
+        Protoni: 73,
+        Neutrones: 108,
+        Electrones: 73,
+        "Massa atomica": 180.95
+        },
+        Wolframium: {
+        Symbol: "W",
+        Protoni: 74,
+        Neutrones: 110,
+        Electrones: 74,
+        "Massa atomica": 183.84
+        },
+        Rhenium: {
+        Symbol: "Re",
+        Protoni: 75,
+        Neutrones: 111,
+        Electrones: 75,
+        "Massa atomica": 186.21
+        },
+        Osmium: {
+        Symbol: "Os",
+        Protoni: 76,
+        Neutrones: 114,
+        Electrones: 76,
+        "Massa atomica": 190.23
+        },
+        Iridium: {
+        Symbol: "Ir",
+        Protoni: 77,
+        Neutrones: 115,
+        Electrones: 77,
+        "Massa atomica": 192.22
+        },
+        Platinum: {
+        Symbol: "Pt",
+        Protoni: 78,
+        Neutrones: 117,
+        Electrones: 78,
+        "Massa atomica": 195.08
+        },
+        Aurum: {
+        Symbol: "Au",
+        Protoni: 79,
+        Neutrones: 118,
+        Electrones: 79,
+        "Massa atomica": 196.97
+        },
+        Hydrargyrum: {
+        Symbol: "Hg",
+        Protoni: 80,
+        Neutrones: 120,
+        Electrones: 80,
+        "Massa atomica": 200.59
+        },
+        Thallium: {
+        Symbol: "Tl",
+        Protoni: 81,
+        Neutrones: 123,
+        Electrones: 81,
+        "Massa atomica": 204.38
+        },
+        Plumbum: {
+        Symbol: "Pb",
+        Protoni: 82,
+        Neutrones: 125,
+        Electrones: 82,
+        "Massa atomica": 207.2
+        },
+        Bismuthum: {
+        Symbol: "Bi",
+        Protoni: 83,
+        Neutrones: 126,
+        Electrones: 83,
+        "Massa atomica": 208.98
+        },
+        Polonium: {
+        Symbol: "Po",
+        Protoni: 84,
+        Neutrones: 125,
+        Electrones: 84,
+        "Massa atomica": 209
+        },
+        Astatum: {
+        Symbol: "At",
+        Protoni: 85,
+        Neutrones: 125,
+        Electrones: 85,
+        "Massa atomica": 210
+        },
+        Radon: {
+        Symbol: "Rn",
+        Protoni: 86,
+        Neutrones: 136,
+        Electrones: 86,
+        "Massa atomica": 222
+        },
+        Francium: {
+        Symbol: "Fr",
+        Protoni: 87,
+        Neutrones: 136,
+        Electrones: 87,
+        "Massa atomica": 223
+        },
+        Radium: {
+        Symbol: "Ra",
+        Protoni: 88,
+        Neutrones: 138,
+        Electrones: 88,
+        "Massa atomica": 226
+        },
+        Actinium: {
+        Symbol: "Ac",
+        Protoni: 89,
+        Neutrones: 138,
+        Electrones: 89,
+        "Massa atomica": 227
+        },
+        Thorium: {
+        Symbol: "Th",
+        Protoni: 90,
+        Neutrones: 142,
+        Electrones: 90,
+        "Massa atomica": 232.04
+        },
+        Protactinium: {
+        Symbol: "Pa",
+        Protoni: 91,
+        Neutrones: 140,
+        Electrones: 91,
+        "Massa atomica": 231.04
+        },
+        Uranium: {
+        Symbol: "U",
+        Protoni: 92,
+        Neutrones: 146,
+        Electrones: 92,
+        "Massa atomica": 238.03
+        },
+        Neptunium: {
+        Symbol: "Np",
+        Protoni: 93,
+        Neutrones: 144,
+        Electrones: 93,
+        "Massa atomica": 237
+        },
+        Plutonium: {
+        Symbol: "Pu",
+        Protoni: 94,
+        Neutrones: 150,
+        Electrones: 94,
+        "Massa atomica": 244
+        },
+        Americium: {
+        Symbol: "Am",
+        Protoni: 95,
+        Neutrones: 148,
+        Electrones: 95,
+        "Massa atomica": 243
+        },
+        Curium: {
+        Symbol: "Cm",
+        Protoni: 96,
+        Neutrones: 151,
+        Electrones: 96,
+        "Massa atomica": 247
+        },
+        Berkelium: {
+        Symbol: "Bk",
+        Protoni: 97,
+        Neutrones: 150,
+        Electrones: 97,
+        "Massa atomica": 247
+        },
+        Californium: {
+        Symbol: "Cf",
+        Protoni: 98,
+        Neutrones: 153,
+        Electrones: 98,
+        "Massa atomica": 251
+        },
+        Einsteinium: {
+        Symbol: "Es",
+        Protoni: 99,
+        Neutrones: 153,
+        Electrones: 99,
+        "Massa atomica": 252
+        },
+        Fermium: {
+        Symbol: "Fm",
+        Protoni: 100,
+        Neutrones: 157,
+        Electrones: 100,
+        "Massa atomica": 257
+        },
+        Mendelevium: {
+        Symbol: "Md",
+        Protoni: 101,
+        Neutrones: 157,
+        Electrones: 101,
+        "Massa atomica": 258
+        },
+        Nobelium: {
+        Symbol: "No",
+        Protoni: 102,
+        Neutrones: 157,
+        Electrones: 102,
+        "Massa atomica": 259
+        },
+        Lawrencium: {
+        Symbol: "Lr",
+        Protoni: 103,
+        Neutrones: 159,
+        Electrones: 103,
+        "Massa atomica": 262
+        },
+        Rutherfordium: {
+        Symbol: "Rf",
+        Protoni: 104,
+        Neutrones: 157,
+        Electrones: 104,
+        "Massa atomica": 267
+        },
+        Dubnium: {
+        Symbol: "Db",
+        Protoni: 105,
+        Neutrones: 157,
+        Electrones: 105,
+        "Massa atomica": 270
+        },
+        Seaborgium: {
+        Symbol: "Sg",
+        Protoni: 106,
+        Neutrones: 160,
+        Electrones: 106,
+        "Massa atomica": 271
+        },
+        Bohrium: {
+        Symbol: "Bh",
+        Protoni: 107,
+        Neutrones: 157,
+        Electrones: 107,
+        "Massa atomica": 270
+        },
+        Hassium: {
+        Symbol: "Hs",
+        Protoni: 108,
+        Neutrones: 169,
+        Electrones: 108,
+        "Massa atomica": 277
+        },
+        Meitnerium: {
+        Symbol: "Mt",
+        Protoni: 109,
+        Neutrones: 157,
+        Electrones: 109,
+        "Massa atomica": 278
+        },
+        Darmstadtium: {
+        Symbol: "Ds",
+        Protoni: 110,
+        Neutrones: 157,
+        Electrones: 110,
+        "Massa atomica": 281
+        },
+        Roentgenium: {
+        Symbol: "Rg",
+        Protoni: 111,
+        Neutrones: 157,
+        Electrones: 111,
+        "Massa atomica": 282
+        },
+        Copernicium: {
+        Symbol: "Cn",
+        Protoni: 112,
+        Neutrones: 173,
+        Electrones: 112,
+        "Massa atomica": 285
+        },
+        Nihonium: {
+        Symbol: "Nh",
+        Protoni: 113,
+        Neutrones: 173,
+        Electrones: 113,
+        "Massa atomica": 286
+        },
+        Flerovium: {
+        Symbol: "Fl",
+        Protoni: 114,
+        Neutrones: 175,
+        Electrones: 114,
+        "Massa atomica": 289
+        },
+        Moscovium: {
+        Symbol: "Mc",
+        Protoni: 115,
+        Neutrones: 173,
+        Electrones: 115,
+        "Massa atomica": 290
+        },
+        Livermorium: {
+        Symbol: "Lv",
+        Protoni: 116,
+        Neutrones: 177,
+        Electrones: 116,
+        "Massa atomica": 293
+        },
+        Tennessinum: {
+        Symbol: "Ts",
+        Protoni: 117,
+        Neutrones: 177,
+        Electrones: 117,
+        "Massa atomica": 294
+        },
+        Oganesson: {
+        Symbol: "Og",
+        Protoni: 118,
+        Neutrones: 176,
+        Electrones: 118,
+        "Massa atomica": 294
+        }
+};
+
 // Setzen Sie die Standardsprache auf Englisch
 var language = 'english';
 
@@ -1684,11 +2513,13 @@ function clickHandler(event) {
     var nameElement = event.target.closest('.element').querySelector('.name');
     if (language === 'english') {
         elementName = nameElement.getAttribute('data-english-name');
-    } else {
+    } else if (language === 'deutsch') {
         elementName = nameElement.getAttribute('data-deutsch-name');
+    } else {
+        elementName = nameElement.getAttribute('data-latin-name');
     }
 
-    var elementData = language === 'english' ? elementDataEnglish : elementDataDeutsch;
+    var elementData = language === 'english' ? elementDataEnglish : (language === 'deutsch' ? elementDataDeutsch : elementDataLatin);
 
     var data = elementData[elementName];
 
@@ -1696,8 +2527,10 @@ function clickHandler(event) {
         var dataString;
         if (language === 'english') {
             dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
-        } else {
+        } else if (language === 'deutsch') {
             dataString = data.Symbol + " (" + elementName + ")" + '<br>Protonen: ' + data.Protonen + '<br>Neutronen: ' + data.Neutronen + '<br>Elektronen: ' + data.Elektronen + '<br>Atommasse: ' + data.Atommasse;
+        } else {
+            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protoni: ' + data.Protoni + '<br>Neutrones: ' + data.Neutrones + '<br>Electrones: ' + data.Electrones + '<br>Massa atomica: ' + data['Massa atomica'];
         }
 
         infoContainer.innerHTML = dataString;
@@ -1740,48 +2573,64 @@ document.getElementById('english').addEventListener('click', function() {
     onLanguageChange('english');
 });
 
-function onLanguageChange(language) {
-
-    var names = document.querySelectorAll('.name, .atom');
-  
-    names.forEach(function(name) {
-      if (language === 'deutsch') {
-        name.textContent = name.getAttribute('data-deutsch-name');
-      } else {
-        name.textContent = name.getAttribute('data-english-name');
-      }
-    });
-  }
-
-  document.querySelectorAll('.element').forEach(function(element) {
-    element.querySelector('.activate').addEventListener('change', function(e) {
-      var atom = document.getElementById('atom');
-      var atomName = element.querySelector('.name').textContent.toLowerCase();
-      atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
-      if (e.target.checked) {
-        if (atomName === 'hydrogen') {
-          atom.style.display = 'block';
-          var orbit = document.createElement('div');
-          orbit.className = 'orbit';
-          var electron = document.createElement('div');
-          electron.className = 'electron';
-          orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
-          atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-        } else if (atomName === 'helium') {
-          atom.style.display = 'block';
-          var orbit = document.createElement('div');
-          orbit.className = 'orbit';
-          for (var i = 0; i < 2; i++) {
-            var electron = document.createElement('div');
-            electron.className = 'electron';
-            orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
-          }
-          atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-        } else {
-          atom.style.display = 'none';
+document.getElementById('latin').addEventListener('click', function() {
+    language = 'latin';
+    displayElementData();
+    var labels = document.querySelectorAll('label');
+    labels.forEach(function(label) {
+        var latinName = label.getAttribute('data-latin-name');
+        if (latinName) {
+            label.textContent = latinName;
         }
-      } else {
-        atom.style.display = 'none';
-      }
     });
-  });
+    if (lastClickedElement) {
+        lastClickedElement.click();
+    }
+    onLanguageChange('latin');
+});
+
+function onLanguageChange(language) {
+    var names = document.querySelectorAll('.name, .atom');
+    names.forEach(function(name) {
+        if (language === 'deutsch') {
+            name.textContent = name.getAttribute('data-deutsch-name');
+        } else if (language === 'latin') {
+            name.textContent = name.getAttribute('data-latin-name');
+        } else {
+            name.textContent = name.getAttribute('data-english-name');
+        }
+    });
+}
+
+document.querySelectorAll('.element').forEach(function(element) {
+    element.querySelector('.activate').addEventListener('change', function(e) {
+        var atom = document.getElementById('atom');
+        var atomName = element.querySelector('.name').textContent.toLowerCase();
+        atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
+        if (e.target.checked) {
+            if (atomName === 'hydrogen') {
+                atom.style.display = 'block';
+                var orbit = document.createElement('div');
+                orbit.className = 'orbit';
+                var electron = document.createElement('div');
+                electron.className = 'electron';
+                orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
+                atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+            } else if (atomName === 'helium') {
+                atom.style.display = 'block';
+                var orbit = document.createElement('div');
+                orbit.className = 'orbit';
+                for (var i = 0; i < 2; i++) {
+                    var electron = document.createElement('div');
+                    electron.className = 'electron';
+                    orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
+                }
+                atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+            } else {
+                atom.style.display = 'none';
+            }
+        } else {
+            atom.style.display = 'none';
+        }
+    });
+});
