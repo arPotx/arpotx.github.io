@@ -2607,8 +2607,12 @@ document.querySelectorAll('.element').forEach(function(element) {
         var atom = document.getElementById('atom');
         var atomName = element.querySelector('.name').textContent.toLowerCase();
         atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
+
+        var hydrogenNames = ['hydrogen', 'wasserstoff', 'hydrogenium'];
+        var heliumNames = ['helium']; // Weitere Namen für Helium, falls benötigt
+
         if (e.target.checked) {
-            if (atomName === 'hydrogen') {
+            if (hydrogenNames.includes(atomName)) {
                 atom.style.display = 'block';
                 var orbit = document.createElement('div');
                 orbit.className = 'orbit';
@@ -2616,7 +2620,7 @@ document.querySelectorAll('.element').forEach(function(element) {
                 electron.className = 'electron';
                 orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
                 atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-            } else if (atomName === 'helium') {
+            } else if (heliumNames.includes(atomName)) {
                 atom.style.display = 'block';
                 var orbit = document.createElement('div');
                 orbit.className = 'orbit';
