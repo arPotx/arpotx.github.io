@@ -142,4 +142,69 @@
     $('.venobox').venobox();
   });
 
+/*--------------------------------------------------------------
+# Website Request
+--------------------------------------------------------------*/
+var modal = document.getElementById("websiteRequestModal");
+var btns = document.querySelectorAll(".offer-button");
+var close = document.getElementsByClassName("website-request-modal-close")[0];
+var form = document.getElementById("requestForm");
+var formIdInput = document.getElementById("formId");
+var confirmationMessage = document.createElement("p");
+confirmationMessage.style.color = "green";
+confirmationMessage.style.display = "none";
+confirmationMessage.textContent = "Request sent. You will receive an email from arPotx within a few days.";
+form.parentNode.appendChild(confirmationMessage);
+
+btns.forEach(function(btn) {
+    btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        var formId = this.getAttribute("data-form-id");
+        formIdInput.value = formId;
+        modal.style.display = "block";
+    });
+});
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    var formData = new FormData(form);
+    var formId = formIdInput.value;
+    var actionUrl = `https://formspree.io/f/${formId}`;
+
+    fetch(actionUrl, {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(function(response) {
+        if (response.ok) {
+            form.style.display = "none";
+            confirmationMessage.style.display = "block";
+            setTimeout(function() {
+                modal.style.display = "none";
+                form.style.display = "block";
+                form.reset();
+                confirmationMessage.style.display = "none";
+            }, 10000);
+        } else {
+            return response.json().then(function(data) {
+                throw new Error(data.error || "There was a problem submitting your request.");
+            });
+        }
+    }).catch(function(error) {
+        alert(error.message);
+    });
+});
+
+close.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+/*--------------------------------------------------------------*/
 })(jQuery);
