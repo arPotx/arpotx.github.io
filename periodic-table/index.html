@@ -9,7 +9,19 @@
 </head>
 <body>
 
-  <div class="element-info"></div>
+  <div class="menu">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-content" id="menuContent">
+      <div onclick="toggleLanguageMenu()">Language</div>
+      <div class="language-options" id="languageOptions">
+        <button id="english">English</button>
+        <button id="deutsch">Deutsch</button>
+        <button id="latin">Latin</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="element-info"></div>
   <div id="atom" style="display: none;">
     <div id="nucleus"></div>
     <div class="orbit">
@@ -10942,11 +10954,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="buttons">
-    <button id="latin">Latin</button>
-    <button id="english">English</button>
-    <button id="deutsch">German</button>
   </div>
   <script src="script.js"></script>
 </body>

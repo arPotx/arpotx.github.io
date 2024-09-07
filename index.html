@@ -63,7 +63,7 @@
           <ul>
             <li class="active"><a href="#header"> <span>Home</span></a></li>
             <li><a href="#about"><span>About</span></a></li>
-            <li><a href="#website"> <span>Website</span></a></li>
+  <!--      <li><a href="#website"> <span>Website</span></a></li> -->
   <!--      <li><a href="#experience"> <span>Experience</span></a></li> -->
   <!--      <li><a href="#projects"> <span>Projects</span></a></li>-->
             <li><a href="#portfolio"> <span>Projects</span></a></li>
@@ -102,23 +102,22 @@
             <img src="assets/img/profile.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <p>Hi, I'm arPotx! I'm deeply immersed in the IT world and specialize in website development and game development with C# in Unity. As a gamer, you can often find me playing titles like "Escape from Tarkov", "Escape from Tarkov: Arena" and "Counter Strike".
+            <p>Hi, I'm arPotx! I'm deeply immersed in the IT world and specialize in website development and game development with C# in Unity. As a gamer, you can often find me playing titles like "Call of Duty: Warzone", "Escape from Tarkov" and "Escape from Tarkov: Arena".
 
               Besides gaming, I'm working on my own 3d fps shooter called EscapePoly. Check it out at escapepoly.com.
               
-              I'm also into jailbreaking iOS and love designing lots of stuff
+              I'm also into jailbreaking iOS and love to work with that stuff.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 06 February</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Email:</strong><span onclick="copyToClipboard('shark.info24@gmail.com')"> shark.info24@gmail.com</span></li>
                   <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Land:</strong><span onclick="showFlag()"> Germany</span></li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Land:</strong><span> Germany</span></li>
                   <img id="germanFlag" src="images/german-flag.png" style="display: none;">
                 </ul>
               </div>
@@ -160,6 +159,12 @@
               <h3>Gaming</h3>
             </div>
           </div>
+          <div class="col-lg-3 col-md-4 mt-md-0">
+            <div class="icon-box">
+              <i class="fa fa-terminal" style="color: #3a3a3a;"></i>
+              <h3>Hacking</h3>
+            </div>
+          </div>
         </div>
   
       </div><!-- End Interests -->
@@ -167,14 +172,14 @@
   
   
     <!-- ======= Website Section ======= -->
-    <section id="website" class="services">
+<!-- <section id="website" class="services">
       <div class="container">
           <div class="section-title">
               <h2>UNDER CONSTRUCTION</h2>
           </div>
           <div class="row" style="display: flex; flex-wrap: wrap;">
               <div class="col-lg-12" data-aos="fade-up" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                  <!-- 
+                  
                   <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
                       <img src="assets/img/BlackGhost-Games_002.png" class="img-fluid" alt="">
                       <h4 style="text-align:left;"><a target="_blank" style="color:#12d640">Easy Website</a><br></h4>
@@ -215,11 +220,11 @@
                           <li>Clean html and css/php script</li>
                       </ul>
                       <button class="offer-button" data-form-id="xovajdaa">Request</button>
-                  </div> -->
+                  </div> 
                   <h4 style="text-align: center;">UNDER CONSTRUCTION</h4>
               </div>
           </div>
-      </div>
+      </div> -->
       <!-- Modal -->
       <div id="websiteRequestModal" class="website-request-modal">
         <div class="website-request-modal-content">
@@ -628,16 +633,6 @@
       setTimeout(function() {
         copyNotification.style.display = "none";
       }, 3000); // Der Text wird nach 3 Sekunden ausgeblendet
-    }
-  </script>
-  
-  <script>
-    function showFlag() {
-      var flag = document.getElementById("germanFlag");
-      flag.style.display = "block";
-      setTimeout(function() {
-        flag.style.display = "none";
-      }, 3000); // Die Flagge wird nach 3 Sekunden ausgeblendet
     }
   </script>
   

@@ -1,3 +1,43 @@
+// MENU SCRIPT
+function toggleMenu() {
+    const menuContent = document.getElementById('menuContent');
+    const languageOptions = document.getElementById('languageOptions');
+    
+    // Ensure the language options are hidden when the menu is toggled
+    languageOptions.classList.remove('show');
+    
+    if (menuContent.classList.contains('show')) {
+      menuContent.classList.remove('show');
+      menuContent.classList.add('hide');
+    } else {
+      menuContent.classList.remove('hide');
+      menuContent.classList.add('show');
+    }
+  }
+
+  function toggleLanguageMenu() {
+    const languageOptions = document.getElementById('languageOptions');
+    languageOptions.classList.toggle('show');
+  }
+
+  // Close the menu if clicked outside
+  document.addEventListener('click', function(event) {
+    const menuContent = document.getElementById('menuContent');
+    const menuIcon = document.querySelector('.menu-icon');
+    if (!menuContent.contains(event.target) && !menuIcon.contains(event.target)) {
+      menuContent.classList.remove('show');
+      menuContent.classList.add('hide');
+      document.getElementById('languageOptions').classList.remove('show');
+    }
+  });
+
+  // Prevent menu from closing when clicking inside
+  document.getElementById('menuContent').addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+
+// MENU SCRIPT ENDING
+
 // Erstellen Sie ein Objekt mit den Daten für jedes Element in Englisch
 var elementDataEnglish = {
     'Hydrogen': {
@@ -2496,145 +2536,134 @@ var elements = document.querySelectorAll('.element');
 
 // Funktion zum Anzeigen der Elementdaten
 function displayElementData() {
-    elements.forEach(function(element) {
-        element.removeEventListener('click', clickHandler);
-        element.addEventListener('click', clickHandler);
-    });
+  elements.forEach(function(element) {
+    element.removeEventListener('click', clickHandler);
+    element.addEventListener('click', clickHandler);
+  });
 }
 
 var lastClickedElement = null;
 
 function clickHandler(event) {
     lastClickedElement = event.target.closest('.element');
-    var infoContainer = document.querySelector('.element-info');
-
+    var infoContainer = document.getElementById('element-info'); // Corrected to use id instead of class
+  
     // Holen Sie sich den Namen des angeklickten Elements
     var elementName;
     var nameElement = event.target.closest('.element').querySelector('.name');
     if (language === 'english') {
-        elementName = nameElement.getAttribute('data-english-name');
+      elementName = nameElement.getAttribute('data-english-name');
     } else if (language === 'deutsch') {
-        elementName = nameElement.getAttribute('data-deutsch-name');
+      elementName = nameElement.getAttribute('data-deutsch-name');
     } else {
-        elementName = nameElement.getAttribute('data-latin-name');
+      elementName = nameElement.getAttribute('data-latin-name');
     }
-
+  
     var elementData = language === 'english' ? elementDataEnglish : (language === 'deutsch' ? elementDataDeutsch : elementDataLatin);
-
+  
     var data = elementData[elementName];
-
+  
     if (data) {
-        var dataString;
-        if (language === 'english') {
-            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
-        } else if (language === 'deutsch') {
-            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protonen: ' + data.Protonen + '<br>Neutronen: ' + data.Neutronen + '<br>Elektronen: ' + data.Elektronen + '<br>Atommasse: ' + data.Atommasse;
-        } else {
-            dataString = data.Symbol + " (" + elementName + ")" + '<br>Protoni: ' + data.Protoni + '<br>Neutrones: ' + data.Neutrones + '<br>Electrones: ' + data.Electrones + '<br>Massa atomica: ' + data['Massa atomica'];
-        }
-
-        infoContainer.innerHTML = dataString;
+      var dataString;
+      if (language === 'english') {
+        dataString = data.Symbol + " (" + elementName + ")" + '<br>Protons: ' + data.Protons + '<br>Neutrons: ' + data.Neutrons + '<br>Electrons: ' + data.Electrons + '<br>Atomic mass: ' + data['Atomic mass'];
+      } else if (language === 'deutsch') {
+        dataString = data.Symbol + " (" + elementName + ")" + '<br>Protonen: ' + data.Protonen + '<br>Neutronen: ' + data.Neutronen + '<br>Elektronen: ' + data.Elektronen + '<br>Atommasse: ' + data.Atommasse;
+      } else {
+        dataString = data.Symbol + " (" + elementName + ")" + '<br>Protoni: ' + data.Protoni + '<br>Neutrones: ' + data.Neutrones + '<br>Electrones: ' + data.Electrones + '<br>Massa atomica: ' + data['Massa atomica'];
+      }
+  
+      infoContainer.innerHTML = dataString;
+      infoContainer.style.display = 'block'; // Ensure the element info is displayed
     }
-}
+  }
 
 // Führen Sie die Funktion zum ersten Mal aus
 displayElementData();
 
 // Ändern Sie die Sprache, wenn eine Schaltfläche geklickt wird
 document.getElementById('deutsch').addEventListener('click', function() {
-    language = 'deutsch';
-    displayElementData();
-    var labels = document.querySelectorAll('label');
-    labels.forEach(function(label) {
-        var deutschName = label.getAttribute('data-deutsch-name');
-        if (deutschName) {
-            label.textContent = deutschName;
-        }
-    });
-    if (lastClickedElement) {
-        lastClickedElement.click();
+  language = 'deutsch';
+  displayElementData();
+  var labels = document.querySelectorAll('label');
+  labels.forEach(function(label) {
+    var deutschName = label.getAttribute('data-deutsch-name');
+    if (deutschName) {
+      label.textContent = deutschName;
     }
-    onLanguageChange('deutsch');
+  });
+  if (lastClickedElement) {
+    lastClickedElement.click();
+  }
+  onLanguageChange('deutsch');
 });
 
 document.getElementById('english').addEventListener('click', function() {
-    language = 'english';
-    displayElementData();
-    var labels = document.querySelectorAll('label');
-    labels.forEach(function(label) {
-        var englishName = label.getAttribute('data-english-name');
-        if (englishName) {
-            label.textContent = englishName;
-        }
-    });
-    if (lastClickedElement) {
-        lastClickedElement.click();
+  language = 'english';
+  displayElementData();
+  var labels = document.querySelectorAll('label');
+  labels.forEach(function(label) {
+    var englishName = label.getAttribute('data-english-name');
+    if (englishName) {
+      label.textContent = englishName;
     }
-    onLanguageChange('english');
+  });
+  if (lastClickedElement) {
+    lastClickedElement.click();
+  }
+  onLanguageChange('english');
 });
 
 document.getElementById('latin').addEventListener('click', function() {
-    language = 'latin';
-    displayElementData();
-    var labels = document.querySelectorAll('label');
-    labels.forEach(function(label) {
-        var latinName = label.getAttribute('data-latin-name');
-        if (latinName) {
-            label.textContent = latinName;
-        }
-    });
-    if (lastClickedElement) {
-        lastClickedElement.click();
+  language = 'latin';
+  displayElementData();
+  var labels = document.querySelectorAll('label');
+  labels.forEach(function(label) {
+    var latinName = label.getAttribute('data-latin-name');
+    if (latinName) {
+      label.textContent = latinName;
     }
-    onLanguageChange('latin');
+  });
+  if (lastClickedElement) {
+    lastClickedElement.click();
+  }
+  onLanguageChange('latin');
 });
 
-function onLanguageChange(language) {
-    var names = document.querySelectorAll('.name, .atom');
-    names.forEach(function(name) {
-        if (language === 'deutsch') {
-            name.textContent = name.getAttribute('data-deutsch-name');
-        } else if (language === 'latin') {
-            name.textContent = name.getAttribute('data-latin-name');
-        } else {
-            name.textContent = name.getAttribute('data-english-name');
-        }
-    });
-}
-
+// Funktion zum Anzeigen des Atommodells
 document.querySelectorAll('.element').forEach(function(element) {
-    element.querySelector('.activate').addEventListener('change', function(e) {
-        var atom = document.getElementById('atom');
-        var atomName = element.querySelector('.name').textContent.toLowerCase();
-        atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
+  element.querySelector('.activate').addEventListener('change', function(e) {
+    var atom = document.getElementById('atom');
+    var atomName = element.querySelector('.name').textContent.toLowerCase();
+    atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
 
-        var hydrogenNames = ['hydrogen', 'wasserstoff', 'hydrogenium'];
-        var heliumNames = ['helium']; // Weitere Namen für Helium, falls benötigt
+    var hydrogenNames = ['hydrogen', 'wasserstoff', 'hydrogenium'];
+    var heliumNames = ['helium']; // Weitere Namen für Helium, falls benötigt
 
-        if (e.target.checked) {
-            if (hydrogenNames.includes(atomName)) {
-                atom.style.display = 'block';
-                var orbit = document.createElement('div');
-                orbit.className = 'orbit';
-                var electron = document.createElement('div');
-                electron.className = 'electron';
-                orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
-                atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-            } else if (heliumNames.includes(atomName)) {
-                atom.style.display = 'block';
-                var orbit = document.createElement('div');
-                orbit.className = 'orbit';
-                for (var i = 0; i < 2; i++) {
-                    var electron = document.createElement('div');
-                    electron.className = 'electron';
-                    orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
-                }
-                atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-            } else {
-                atom.style.display = 'none';
-            }
-        } else {
-            atom.style.display = 'none';
+    if (e.target.checked) {
+      if (hydrogenNames.includes(atomName)) {
+        atom.style.display = 'block';
+        var orbit = document.createElement('div');
+        orbit.className = 'orbit';
+        var electron = document.createElement('div');
+        electron.className = 'electron';
+        orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
+        atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+      } else if (heliumNames.includes(atomName)) {
+        atom.style.display = 'block';
+        var orbit = document.createElement('div');
+        orbit.className = 'orbit';
+        for (var i = 0; i < 2; i++) {
+          var electron = document.createElement('div');
+          electron.className = 'electron';
+          orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
         }
-    });
+        atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
+      } else {
+        atom.style.display = 'none';
+      }
+    } else {
+      atom.style.display = 'none';
+    }
+  });
 });
