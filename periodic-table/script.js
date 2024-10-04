@@ -2632,38 +2632,27 @@ document.getElementById('latin').addEventListener('click', function() {
 
 // Funktion zum Anzeigen des Atommodells
 document.querySelectorAll('.element').forEach(function(element) {
-  element.querySelector('.activate').addEventListener('change', function(e) {
-    var atom = document.getElementById('atom');
-    var atomName = element.querySelector('.name').textContent.toLowerCase();
-    atom.innerHTML = '<div id="nucleus"></div>'; // Entfernen Sie alle vorhandenen Orbits und Elektronen
+    element.querySelector('.activate').addEventListener('change', function(e) {
+        var atom = document.getElementById('atom');
+        var electronConfig = element.querySelector('.atomic-weight').textContent.trim().split('\n').map(Number);
+        atom.innerHTML = ''; // Clear existing orbits and electrons
 
-    var hydrogenNames = ['hydrogen', 'wasserstoff', 'hydrogenium'];
-    var heliumNames = ['helium']; // Weitere Namen für Helium, falls benötigt
-
-    if (e.target.checked) {
-      if (hydrogenNames.includes(atomName)) {
-        atom.style.display = 'block';
-        var orbit = document.createElement('div');
-        orbit.className = 'orbit';
-        var electron = document.createElement('div');
-        electron.className = 'electron';
-        orbit.appendChild(electron); // Fügen Sie ein Elektron hinzu
-        atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-      } else if (heliumNames.includes(atomName)) {
-        atom.style.display = 'block';
-        var orbit = document.createElement('div');
-        orbit.className = 'orbit';
-        for (var i = 0; i < 2; i++) {
-          var electron = document.createElement('div');
-          electron.className = 'electron';
-          orbit.appendChild(electron); // Fügen Sie zwei Elektronen hinzu
+        if (e.target.checked) {
+            atom.style.display = 'block';
+            electronConfig.forEach(function(electrons, index) {
+                var orbit = document.createElement('div');
+                orbit.className = 'orbit';
+                orbit.style.width = (100 + index * 50) + 'px';
+                orbit.style.height = (100 + index * 50) + 'px';
+                for (var i = 0; i < electrons; i++) {
+                    var electron = document.createElement('div');
+                    electron.className = 'electron';
+                    orbit.appendChild(electron);
+                }
+                atom.appendChild(orbit);
+            });
+        } else {
+            atom.style.display = 'none';
         }
-        atom.appendChild(orbit); // Fügen Sie die Orbit hinzu
-      } else {
-        atom.style.display = 'none';
-      }
-    } else {
-      atom.style.display = 'none';
-    }
-  });
+    });
 });
