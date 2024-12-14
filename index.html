@@ -81,7 +81,6 @@
             <a href="https://discord.gg/pEE5MV6739" target="_blank" class="discord"><i class="bx bxl-discord"></i></a>
             <a href="https://www.github.com/arPotx" target="_blank" class="github"><i class="bx bxl-github"></i></a>
             <a onclick="copyToClipboard('shark.info24@gmail.com')"><i class='bx bx-envelope'></i></a>
-            <a href="https://escapepoly.com" target="_blank" class="escapepoly"><i class='bx bxl-unity'></i></a>
         </div>
         <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
       </div>
@@ -117,7 +116,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Land:</strong><span> Germany</span></li>
+                  <li id="countryItem"><i class="icofont-rounded-right"></i> <strong>Land:</strong><span> Germany</span></li>
                   <img id="germanFlag" src="images/german-flag.png" style="display: none;">
                 </ul>
               </div>
@@ -571,7 +570,6 @@
               <div class="social-links">
                 <a href="https://discord.gg/pEE5MV6739" target="_blank" class="discord"><i class="bx bxl-discord"></i></a>
                 <a href="https://www.github.com/arPotx" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                <a href="https://escapepoly.com" target="_blank" class="escapepoly"><i class='bx bxl-unity'></i></a>
               </div>
             </div>
           </div>
@@ -582,7 +580,6 @@
               <h3>Email</h3>
               <p onclick="copyToClipboard('shark.info24@gmail.com')">shark.info24@gmail.com</p>
               <div>
-                <p id="copyNotification" style="display: none; color: #41cd7c;">Email copied!</p>
               </div>
             </div>
           </div>
@@ -612,6 +609,20 @@
         backSpeed: 65
       });
     </script>
+
+  <script>
+    function showFlag() {
+      const flag = document.getElementById('germanFlag');
+      
+      flag.style.display = 'block';
+      
+      setTimeout(() => {
+        flag.style.display = 'none';
+      }, 3000); 
+    }
+    document.getElementById('countryItem').addEventListener('click', showFlag);
+  </script>
+
   
   <script>
     function copyToClipboard(text) {
