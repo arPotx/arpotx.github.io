@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initializeFireworks() {
-    var countdownDate = new Date("January 1, 2024 00:00:00").getTime();
+    var countdownDate = new Date("January 1, 2025 00:00:00").getTime();
 
     var x = setInterval(function () {
         var now = new Date().getTime();
@@ -53,7 +53,7 @@ window.requestAnimFrame = (function () {
     );
 })();
 
-var animationFinished = false; // Neue Variable hinzugefügt
+var animationFinished = false;
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
     cw = window.innerWidth,

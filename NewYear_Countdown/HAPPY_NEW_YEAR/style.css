@@ -59,7 +59,7 @@ span.seis{
 span.sete{
   position: absolute;
   right: 0%;
-  margin-right: -200px;
+  margin-right: -180px;
   animation: vem_2017 6s ease-in-out forwards;
 }
 span.sete:before{
