@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initializeFireworks() {
-    var countdownDate = new Date("January 1, 2025 00:00:00").getTime();
+    var countdownDate = new Date("January 1, 2026 00:00:00").getTime();
 
     var x = setInterval(function () {
         var now = new Date().getTime();
