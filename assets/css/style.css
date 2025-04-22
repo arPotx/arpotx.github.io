@@ -18,7 +18,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
+  background: 121314;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(19, 23, 26, 1) 70%, rgba(19, 24, 27, 1) 100%);
   background-size: cover;
   left: 0;
   right: 0;
@@ -33,6 +34,7 @@ body::before {
 }
 
 a {
+  font-family: "Open Sans", sans-serif;
   color: #12d640;
 }
 
@@ -42,7 +44,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Agency FB', sans-serif;
 }
 
 /* Announcement-Banner */
@@ -108,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 span {
   color: #ffc107;
-  border-bottom: 2px solid #1c7d32;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 6px;
 }
 
@@ -205,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #12d640;
+  color: #c0f0ff;
   text-decoration: none;
 }
 
@@ -299,7 +301,17 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: #101212;
+}
+
+#header.header-top .header-line {
+  width: 100%;
+  height: 1px;
+  background-color: #7d7466;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  z-index: 1000;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -509,7 +521,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #09203a;
+  background: #121516; /*111313  121516*/
   transition: ease-in-out 0.3s;
 }
 
@@ -530,7 +542,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: #212729;
 }
 
 /*--------------------------------------------------------------
@@ -682,7 +694,7 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: #121516;
   padding: 20px 20px;
   transition: all ease-in-out 0.3s;
   margin: 10px;
@@ -739,7 +751,7 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #042e5f;
+  background: #212729;
   border-color: #1c7d32;
 }
 
@@ -936,7 +948,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: #09203a;
+  background: #121516;
 }
 
 .contact .info-box i.bx {
@@ -949,8 +961,8 @@ section .container {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
-  color: #28a745;
+  font-size: 23px;
+  color: #c0f0ff;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
