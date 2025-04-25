@@ -8,4 +8,4 @@
 </p>
 
 <h3 align="left">Website request</h3>
-<p>You need a custom website? Then check out my portfolio and request one, there´s 3 option to select.</p>
+<p>You need a custom website? You can write me a email and request one.</p>
