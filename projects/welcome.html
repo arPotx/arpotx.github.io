@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>:D</title>
+  <style>
+    :root {
+      --bg-color: #1b1b1d;
+      --input-bg: #2a2a2c;
+      --border-color: #555;
+      --text-color: #f0f0f0;
+      --placeholder-color: #999;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("https://4kwallpapers.com/images/walls/thumbs_3t/6722.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: "Segoe UI", sans-serif;
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .clock {
+      position: absolute;
+      top: 40px;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--text-color);
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 20px 0 40px;
+      opacity: 0.85;
+    }
+
+    .search-container {
+      display: flex;
+      width: 90%;
+      max-width: 600px;
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      background-color: var(--input-bg);
+      overflow: hidden;
+      box-shadow: 0 0 10px #00000040;
+    }
+
+    .search-container input {
+      flex: 1;
+      padding: 16px 22px;
+      font-size: 1.1rem;
+      background: none;
+      border: none;
+      color: var(--text-color);
+      outline: none;
+    }
+
+    .search-container input::placeholder {
+      color: var(--placeholder-color);
+    }
+
+    .search-container button {
+      padding: 16px 22px;
+      font-size: 1.1rem;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .search-container button:hover {
+      background-color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .clock {
+        font-size: 2rem;
+        top: 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clock" id="clock">--:--</div>
+
+  <h1>Welcome arPotx</h1>
+
+  <form class="search-container" onsubmit="handleSearch(event)">
+    <input type="text" id="searchInput" placeholder="Suche..." autofocus />
+    <button type="submit">Los</button>
+  </form>
+
+  <script>
+    function handleSearch(event) {
+      event.preventDefault();
+      const query = document.getElementById('searchInput').value.trim();
+      if (query) {
+        window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+      }
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${hours}:${minutes}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+</body>
+</html>
